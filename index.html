@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="./media/favicon.ico" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet" />
+  <title>Mergim Kastrati</title>
+</head>
+
+<body>
+  <div class="main-container fade-in">
+    <div class="img-container">
+      <img src="./media//mergim.k.jpg" alt="Mergim Kastrati" class="prof" />
+    </div>
+    <div id='flip-card' class='flip-card'>
+      <div class='flip-card-inner'>
+        <div class="about-container">
+          <p>
+            Hey! My name is Mergim and I am a Front End Developer.
+          </p>
+          <p>
+            I am currently looking for an internship or an entry full time position where I can continue strengthening
+            my skills in HTML, CSS, JS, and React JS. Thus far I have been able to involve myself in not only multiple
+            rigorous trainings in the mentioned technologies but also have participated in an internship at Omicron
+            Academy where I helped develop and deploy multiple platforms. Additionally, currently I am doing an
+            internship at StarLabs and so far loving it.
+          </p>
+          <button class="styleless-button" onclick="toggleProjects()">
+            <p>
+              View My Projects
+            </p>
+          </button>
+          <div class="icons">
+            <span class="header-icons">
+              <a href="https://github.com/Mergim-maker" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/mergim-kastrati-89679220a/" target="_blank"><i
+                  class="fab fa-linkedin"></i></a>
+              <a href="mailto:mkastrati742@gmail.com"><i class="fas fa-envelope"></i></a>
+            </span>
+          </div>
+        </div>
+        <div class="projects-container">
+          <button class="styleless-button back" onclick="toggleProjects()">
+            <p>Back</p>
+          </button>
+          <div class='projects'>
+            <div class='project-item'>
+              <i class="fas fa-globe"></i>
+              <a href='https://github.com/Mergim-maker/real-estate-react-project'
+                target='_blank'>Real Estate App
+              </a>
+            </div>
+            <div class='project-item'>
+              <i class="fas fa-globe"></i>
+              <a href='https://github.com/Mergim-maker/map-react-project'
+                target='_blank'>React Map App</a>
+            </div>
+            <div class='project-item'>
+              <i class="fas fa-globe"></i>
+              <a href='https://github.com/Mergim-maker/covid-tracker' target='_blank'>Covid Tracker</a>
+            </div>
+            <div class='project-item'>
+              <i class="fas fa-globe"></i>
+              <a href='https://github.com/Mergim-maker/todo-list-react-project'
+                target='_blank'>Simple React To Do List</a>
+            </div>
+          </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer fade-in">
+    <div class="footer-copyright">
+      &copy;
+      <script type="text/javascript">
+        document.write(new Date().getFullYear());
+      </script>
+      Mergim Kastrati
+    </div>
+  </div>
+</body>
+<script>
+  function toggleProjects() {
+    var flipCardElement = document.getElementById('flip-card');
+
+    if (flipCardElement.classList.contains('flipped')) {
+      flipCardElement.classList.remove('flipped');
+    } else {
+      flipCardElement.classList.add('flipped');
+    }
+  }
+</script>
+
+</html>
